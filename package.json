@@ -10,10 +10,10 @@
     "version": "0.8.8",
     "publisher": "bmewburn",
     "engines": {
-        "vscode": "^1.18.0"
+        "vscode": "^1.26.0"
     },
     "categories": [
-        "Languages",
+        "Programming Languages",
         "Linters",
         "Formatters"
     ],
@@ -147,13 +147,13 @@
         "@types/node": "^7.0.54",
         "@types/semver": "^5.5.0",
         "typescript": "^2.7.1",
-        "vscode": "^1.1.10"
+        "vscode": "latest"
     },
     "dependencies": {
         "fs-extra": "^5.0.0",
         "intelephense-server": "^0.8.8",
         "semver": "^5.5.0",
-        "vscode-languageclient": "^4.0.0-next.7"
+        "vscode-languageclient": "^5.0.1"
     },
     "private": true
 }

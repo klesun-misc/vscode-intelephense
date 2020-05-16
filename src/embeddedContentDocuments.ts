@@ -329,7 +329,7 @@ export function initializeEmbeddedContentDocuments(getClient: () => LanguageClie
         },
 
         provideDefinition: (document: TextDocument, position: Position, token: CancellationToken, next: ProvideDefinitionSignature) => {
-            return middleWarePositionalRequest<Definition>(document, position, () => {
+            return middleWarePositionalRequest(document, position, () => {
                 return next(document, position, token);
             }, (r) => { return !r || (Array.isArray(r) && r.length < 1); }, (vdoc) => {
                 return commands.executeCommand<Definition>('vscode.executeDefinitionProvider', vdoc.uri, position).then((def) => {
